@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise5</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  	<style type="text/css">
+  		.container_full{
+  			color: blue;
+  			border:10px solid #3399FF;
+  			margin:20px 5px 10px 5px;
+  		}
+  		.img1{
+  			width: 100%;
+  			height: 100%;
+  			padding:15px 15px 15px 15px;
+  		}
+  		.button_sign_in{
+  			background-color: #00CC00;
+  			width: 587px;
+  			height: 50px;
+  			color: white;
+  			margin-top: 20px;
+  		}
+  		.button_log_in{
+  			width: 587px;
+  			height: 50px;
+  			margin-top: 15px;
+  		}
+  		input{
+  			margin:0px 15px 15px 5px;
+  		}
+  		 #hr span{
+    	background:#fff;
+    	padding:0px 10px;
+		}
+		#hr{
+    	text-align: center;
+    	border-bottom: 1px solid #000;
+    	line-height: 0.1em;
+    	margin: 35px 10px 35px 0.5px;
+		}
+	.form_right{
+		margin:15px 15px 45px -17px;
+	}
+  	</style>
+</head>
+<body>
+
+	<div class="container_full">
+		<div class="row">
+			<div class="col-sm-7">
+				<img src="../images/cv.jpg " class="img1" >	
+			</div>
+			<div class="col-sm-5" >
+				<form class="form_right">
+					<label>Họ tên*</label>
+					<input type="text" name="name" size="75px">
+					<label>Email*</label>
+					<input id="fullemail" type="text" name="email" size="75px">
+					<label>Mật khẩu*</label>
+					<input type="pasword" name="pasword" size="75px">
+					<label>Mã xác thực*</label>
+					<img src="../images/maxacthuc.jpg" width="130px" height="70px">
+					<input type="text" name="verification_codes" size="75px">
+					<button class="button_sign_in">ĐĂNG KÝ MỞ TÀI KHOẢN &nbsp;<i class="fas fa-angle-right"></i></button>
+					<p id="hr"><span>Bạn đã có tài khoản ?</span></p>
+					<button class="button_log_in">ĐĂNG NHẬP</button>
+			</form>
+
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

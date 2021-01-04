@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise4</title>
+	<style type="text/css">
+	form{
+		height:680px;
+		width: 900px;
+		background-color:#FFEFDB;
+		margin: auto auto;
+}
+	.sign-up-content form fieldset{
+	border: none;
+}
+.infomation input{
+    padding: 5px;
+    width: 99%;
+    margin: 3px 0;
+    border: 1px solid #bbb6ac;
+    border-radius: 6px;
+}
+.infomation textarea{
+    padding: 5px;
+    width: 99%;
+    margin: 3px 0;
+    border: 1px solid #bbb6ac;
+    border-radius: 6px;
+}
+h1{
+	text-align: center;
+	padding-top: 10px;
+}
+h4{
+	margin-left: 10px;
+}
+button{
+	width: 200px;
+	height: 30px;
+	padding-left: 10px;
+	border-radius: 6px;
+}
+#button{
+	background-color: #3399FF;
+}
+.submit{
+
+}
+	</style>
+</head>
+<body>
+	<div >
+		<div class="sign-up-content">
+			<form name="sign-up">
+				<h1>Đăng ký thành viên</h1>
+				<p>Để đăng ký thành viên, bạn cần khai báo tất cả các ô trống dưới đây</p>
+				<fieldset class="infomation">
+					<input type="text" name="Surname_and_middle_name" placeholder="Họ và tên đệm" size = 70px; >
+					<input type="text" name="name" placeholder="Tên" size = 70px;>
+					<input type="text" name="user_name" placeholder="Tên đăng nhập" size = 70px;>
+					<input type="text" name="email" placeholder="Email" size = 70px;>
+					<input type="password" name="password1" placeholder="Mật khẩu" size = 70px;>
+					<input type="password" name="password2" placeholder="Lặp lại mật khẩu" size = 70px;>
+				</fieldset>
+				<h4>Giới tính
+					<input type="radio" name="sex" value="N/A">N/A
+					<input type="radio" name="sex" value="Nam">Nam
+					<input type="radio" name="sex" value="Nữ">Nữ</h4>
+					<fieldset class="infomation">
+						<input type="date" name="brithday" size = 70px;>
+						<textarea  name="signature"placeholder="Chữ ký" size = 70px;></textarea>
+						<input list="private-question" name="privite-question" placeholder="Câu hỏi bảo mật"size = 70px;>
+                    	<datalist id="private-question">
+                        	<option value="Bạn sinh ở đâu?"></option>
+                        	<option value="Sở thích của bạn là gì?"></option>
+                        	<option value="Bạn học trường nào?"></option>
+                     </datalist><br><br>
+					<input type="text" name="answer" placeholder="Trả lời câu hỏi">
+					</fieldset>
+				<fieldset >
+					<div class="submit" align="center">
+						<input type="checkbox" name="agree">Tôi đồng ý với 
+						<button>Quy định đăng ký thành viên</button><br><br>
+						<button type="reset">Thiết lập lại</button><button  type="submit" id="button">Đăng ký thành viên</button>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
