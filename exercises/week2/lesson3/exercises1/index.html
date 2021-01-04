@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Exercises1</title>
@@ -5,38 +6,26 @@
 <body>
 	<h1>Thanh toán</h1>
 	<form action="/action_gape.php" method="get">
-		<p>
-			<label for="fullname" >Tên đầy đủ</label>
-			<input id="fullname" name="name" type="text" placeholder="Nhập tên đầy đủ người mua hàng" size=" 50"></input>
-		</p>
-		<p>
-			<label for="password">Password</label>
-			<input id="password" name="password" type="password" placeholder="Nhập password"></input>
-		</p>
-		<p>
-			<label for="email">Email</label>
-			<input id="email" name="email" type="email" placeholder="Nhập email"></input>
-		</p>
-		<p>
-			<label for="mathangmua">Mặt hàng mua </label>
-			<input list="test-1" name="qad" id="test">
-			<datalist id="test-1">
+		<label for="fullname" >Tên đầy đủ</label>
+		<input id="fullname" name="name" type="text" placeholder="Nhập tên đầy đủ người mua hàng" size=" 50"></input><br><br>
+		<label for="password">Password</label>
+		<input id="password" name="password" type="password" placeholder="Nhập password"></input><br><br>
+		<label for="email">Email</label>
+		<input id="email" name="email" type="email" placeholder="Nhập email"></input><br><br>
+		<label for="mathangmua">Mặt hàng mua </label>
+		<input name="mathangmua" id="items"><br><br>
+			<datalist id="items">
 				<option value="Shoes"></option>
 				<option value="Socks"></option>
 				<option value="Shirt"></option>
 				<option value="Sandals"></option>
 				<option value="Trousers"></option>
 			</datalist>
-		</p>
-		<p>
-			<label for="soluongmua"">Số lượng mua</label>
-			<input type="number" min="1" max="5"></input>
-		</p>
-		<p>
-			<label for="bankinhvanchuyen">Bán kính vận chuyển</label>
-			<input type="range" min="10" max="50"></input>
-		</p>
+		<label for="soluongmua"">Số lượng mua</label>
+		<input type="number" min="1" max="5"></input><br><br>
+		<label for="bankinhvanchuyen">Bán kính vận chuyển</label>
+		<input type="range" min="10" max="50"></input><br><br>
 		<button>Đăng kí</button>
-		</form>	
+	</form>	
 </body>	
 </html>
