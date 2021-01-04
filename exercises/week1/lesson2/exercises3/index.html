@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise4</title>
+</head>
+<body>
+	<form action="/Exercises.php" method="POST">
+	<h1>Travel reservation form</h1>
+	<h2>*denotes mandotory</h2>
+	<p>
+		<label for="fullname">Fullname*:</label><br>
+		<input id="fullname" name="name" type="text" placeholder="FirstName LastName"></input>
+	</p>
+	<p>	
+		<label for="email address">Email address*:</label><br>
+		<input id="email address" name="email address" type="text"></input>
+	</p>
+	<p>	
+		<label for="select tour package">Select Tour Package*:</label><br>
+		<select >
+			<option >Goa </option>
+			<option>vp</option>
+			<option>n1 </option>
+		</select>
+	</p>
+	<p>	
+		<label for="arrival date">Arrival date*:</label><br>
+		<input id="arrival date" name="arrival date" type="datetime" placeholder="m/d/y"></input>
+	</p>
+	<p>
+		<label for="number of person">Number of person*:</label><br>
+		<input id="number of person" name="number of person" type="text"></input>
+	</p>
+	<p>What would you want to aval?</p>
+	<p>		
+		<label for="boarding">Boarding</label>
+		<input type="checkbox" id="boarding" name="boarding" value="boarding"></input>
+	</p>
+	<p>
+		<label for="fooding">Fooding</label>
+		<input type="checkbox" id="fooding" name="fooding" value="fooding"></input>
+	</p>
+	<p>
+		<label for="sight seeing">Sight seeing</label>
+		<input type="checkbox" id="sight seeing" name="sight seeing" value="sight seeing"></input>	
+	</p>
+	<p>
+		<label for="discount coupon code">Discount Coupon code:</label><br>
+		<input type="text" id="discount_coupon_code" name="Dcc" ></input>		
+	</p>
+	<p>
+		<label for="discount_coupon_code">Terms and conditions*</label><br>
+		<input type="radio" id="agree" name="gender" value="agree">I agree</input>
+		<input type="radio" id="disagree" name="gender" value="disagree">I disagree</input>
+	</p>
+	<p>
+		<button> Complete reservation</button>
+	</p>		
+	</form>
+</body>
+</html>

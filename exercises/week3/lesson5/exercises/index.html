@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise1</title>
+<style type="text/css">
+.left{
+	float: left;
+    font-size: 40px;
+    position: relative;
+    bottom: 20px;
+    left: 20px;
+}
+.content_button{
+	font-family: 'Lora', serif;
+	position: relative;
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/header.jpg');
+	background-repeat: no-repeat;
+	text-align: center;
+	background-size: cover;
+	margin: auto;
+	height: 600px;
+	object-fit: cover;
+	background-position: center;
+}
+.content_button ul{
+	position: absolute;
+	right: 0;
+	transform: translateY(-50);
+	list-style-type: none;
+	padding-right: inherit;
+	width: 100%;
+    margin: 0;
+    text-align: end;
+    padding: 20px;
+}
+.content_button a{
+	color: blue;
+	display: inline;
+	padding: 10px 15px;
+	color: white;
+	text-decoration: none;
+}
+ .content p{
+ 	color: white;
+    position: relative;
+    top: 230px;
+    text-align: center;
+    font-family: 'Lora', sans-serif;
+}
+.active {
+	border: 2px solid white;
+	border-radius: 100px;
+}
+.active:hover{
+	color: black;
+	background-color: white;
+	text-decoration: none;
+	transition: 0.3s;
+}
+.contaner p,h1{
+	color: white;
+    position: relative;
+    top: 215px;
+    text-align: center;
+    font-family: 'Lora', sans-serif;
+}
+.container h1{
+	font-size: 57px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+button{
+	background-color: rgb(54, 179, 168);
+    color: white;
+    position: relative;
+    top: 200px;
+    text-align: center;
+    border-radius: 100px;
+    border: 0;
+    font-size: 16px;
+    padding: 10px;
+}
+button:hover{
+	opacity: 0.6;
+	cursor: pointer;
+}
+.container{
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	margin: 100px 125px 100px 125px;
+}
+.container h2{
+	color: #1b1b1b;
+	font-size: 30px;
+}
+.active p{
+	width: 50%;
+    margin: auto;
+    line-height: 36px;
+    margin-bottom: 125px;
+    color: #818181;
+}
+.container img{
+	width: 100%;
+}
+.container table{
+	width: calc(100% -10px);
+	margin: auto;
+	padding: 
+}
+.container td{
+	padding: 24px;
+	line-height: 36px;
+}
+.container h3{
+	color:#44958e;
+}
+.footer{
+	padding: 75px;
+	background-color: #1f1f1f;
+	line-height: 16px;
+	text-align: center;
+}
+.footer h5{
+	letter-spacing: 1px;
+	color: #c4c4c4;
+}
+.footer p{
+	color: #676767;
+}
+</style>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="content_button">
+		<nav>
+			<ul>
+			<a class="left" href="#">CS 193x</a>
+			<a href="#">HOME</a>
+			<a href="#">ABOUT</a>
+			<a href="#">NEWS</a>
+			<a href="#">READ ME</a>
+			<a class="active" href="#">TEXT ACTIONS</a>
+			</ul>
+		</nav>
+		<div class="content">
+		<p >Sustainability</p>
+		<h1>STARTS WITH YOU</h1>
+		<button type="button">LEARN MORE</button>
+	</div>
+	</div>
+		<div class="container">
+		<h2>We conserve land though outreach, restration, and research.</h2>
+		<p class="active">Some of the Earth's greatest landscapes are threatened by increased road construction, oil and gas exploration, and mining. We aim to protect these areas from inaooropriate development, but we cannot achieve our goals alone. Find out how you can help.</p>
+		<table>
+			<tr>
+				<td>
+					<img src="../images/h1.jpg" >
+					<h3>ABOUT</h3>
+					<p>Find out about our organization, mission, our methods, and the results of our decades of advocady.</p>
+				</td>
+				<td>
+					<img src="../images/h2.jpg" >
+					<h3>TAKE ACTION</h3>
+					<p>Ready to take the next step? You can become a contributor to our cause, or participate yourself.</p>
+				</td>
+			</tr>
+		</table>
+	</div>
+		<div class="footer">
+			<h5>CS193X, SHRIAM CENTER 104</h5>
+			<p>Powered by competence</p>
+		</div>
+</body>
+</html>
