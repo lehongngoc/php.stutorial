@@ -7,63 +7,53 @@
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   	<style type="text/css">
-  	.button1{
-  		background-color: #3399FF;
-  		border:none;
-  		color:white;
-  		text-align: center;
-  		text-decoration: none;
-  		border-radius: 25px;
+  	.btn-info{
   		width: 300px;
-  		height: 50px;
   	}
-  	.button2{
-  		background-color: #33CC00;
-  		border:none;
+  	.btn-success{
+  		width: 200px;
+  	}
+	.btn-success, .btn-info{
+		border:none;
   		color:white;
   		text-align: center;
   		text-decoration: none;
   		border-radius: 25px;
-  		width: 200px;
-  		height: 50px;
-
-  	}
-  	#row1_full{
+		height: 50px;
+	}
+  	#top{
   		padding-left: 50px;
   		margin-top: 25px;
   	}
-  	#row2_full{
-  		margin:50px 10px 10px ;
-  	}
-  	#row2_table3{
+  	#bottom-left{
   		margin-left: 15px;
   	}
-  	#row2_table4{
+  	#bottom-right{
   		margin-top: 50px;
   	}
   </style>
 </head>
 <body>
-	<div class="container_full">
-		<div class=" row" id="table">
-			<div class=" col-sm-6" id="row1_full" >
+	<div class="container-fuild">
+		<div class=" row">
+			<div class="col-sm-6" id="top" >
 				<h1>A ELlegant Design</h1>
 				<p>Bacon ipsum dolor sit ament meatball shank pork chop capicola fatback 
 					<br>pork loin sirioin flank.<b>Andouitle</b>tongue comed beef rump pork loin<br> shank meaball capicoia turducken venison shankle kevin pancetta tri-tip<br> boudin</p>
-				<button class="button1">BLUE BUTTON WITH MODAL VIDEO</button>
+				<button class="btn btn-info">BLUE BUTTON WITH MODAL VIDEO</button>
 			</div>
-			<div class=" col-sm-6">
+			<div class="col-sm-6">
 				<img src="../images/giaodien1.jpg" width="550"; height="350;">
 			</div>
 		</div>
-		<div class=" row" id="row2_table3">
+		<div class="row" id="bottom-left">
 			<div class=" col-sm-6">
 				<img src="../images/giaodien.jpg" width="300; height=250;">
 			</div>
-			<div class=" col-sm-6" id="row2_table4">
+			<div class="col-sm-6" id="bottom-right">
 				<h1>Pretty easy to customize</h1>
 				<p>Bacon ipsum dolor sit ament meatball shank pork chop capicola fatback pork loin sirioin flank.<b>Andouitle</b> tongue comed beef rump pork loin shank meaball capicoia turducken venison shankle kevin pancetta tri-tip boudin</p>
-				<button class="button2">ANOTHER BUTTON</button>
+				<button class="btn btn-success">ANOTHER BUTTON</button>
 			</div>			
 		</div>
 	</div>
