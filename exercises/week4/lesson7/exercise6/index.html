@@ -7,71 +7,72 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  	<style type="text/css">
-  		body{
-  			width: 450px;
-  			height:  500px;
-  			border: 10px solid blue;
-        margin:120px 500px 120px 500px;
+  <style type="text/css">
+  	.container{
+  		border: 10px solid blue;
+        margin: 100px 500px 120px 500px;
   		}
-  	form{
+  	.login-form{
   		margin: 30px 12px 10px 14px;
-  		width: 500px;
+  		width: 34.5%;
   	}
   	.button_fb{
-  		color: white;
   		background-color: #0033CC;
-  		height: 40px;
-  		width: 130px;
   	}
   	.button_google{
-  		color: white;
   		background-color: #FF0000;
-  		height: 40px;
-  		width: 130px;
   	}
   	.button_phone{
-  		color: white;
   		background-color: #00CC00;
-  		height: 40px;
+  	}
+	.button_fb, .button_google, .button_phone{
+		height: 40px;
   		width: 130px;
-  	}
-  	.email{
-  		background-color: #FFFFCC;
-  	}
-  	.password{
+		color: white;
+	}
+  	.email, .password{
   		background-color: #FFFFCC;
   	}
   	.button_login{
-  		width: 400px;
-  		height: 40px;
   		background-color:#1E90FF;
   	}
-  	.button_log_in{
+  	.button_log_in, .button_login{
   		width: 400px;
   		height: 40px;
-
   	}
-  	</style>
+	.title{
+	text-align: center;
+    	border-bottom: 1px solid #c7adad;
+    	line-height: 0.1em;
+    	margin: 30px 0 11px;
+	}
+	.title span{
+    background:#fff;
+    padding: 3px 2px;
+	}
+  </style>
 </head>
 <body >
-	<form >
-		<p>ĐĂNG NHẬP VỚI</p>
+	<form class="login-form">
+	<div class="container">
+		<p class="title"><span>ĐĂNG NHẬP VỚI<span></p>
 		<button class="button_fb"><i class="fab fa-facebook-f"></i>&nbsp;Facebook</button>
 		<button class="button_google"><i class="fab fa-google"></i>&nbsp;Google</button>
 		<button class="button_phone"><i class="fas fa-phone"></i>&nbsp;Phone</button>
 		<p>HOẶC</p>
 		<p>
 			<label>Email*</label><br>
-			<input class="email" id="fullemail" type="text" name="email" size="50px;"><br>
+			<input class="email" id="fullemail" type="text" name="email" size="51px;"><br>
 			<label>Mật khẩu*</label><br>
-			<input class="password" type="password" name="password" size="50px;">
+			<input class="password" type="password" name="password" size="51px;">
 			<br>
-			<input type="checkbox" name="checkbox"> Tự động đăng nhập &nbsp &nbsp &nbsp Quên mật khẩu?<br>
+			<input type="checkbox" name="checkbox"> Tự động đăng nhập &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+			Quên mật khẩu?<br>
 			<button class="button_login" >Đăng Nhập</button>
 			<p>bạn chưa có tài khoản</p>
-			<button class="button_log_in"> Đăng Ký Nhanh</button>
+			<button class="button_log_in">Đăng Ký Nhanh</button>
 		</p>
+	</div>
 	</form>
 </body>
 </html>
