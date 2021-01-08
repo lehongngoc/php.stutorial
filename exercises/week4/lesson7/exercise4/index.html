@@ -2,14 +2,15 @@
 <html>
 <head>
 	<title>Exercise4</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<style type="text/css">
-	form{
+.container{
 		height:680px;
 		width: 900px;
-		background-color:#FFEFDB;
+		background-color:#f7f2f2;
 		margin: auto auto;
 }
-	.sign-up-content form fieldset{
+.sign-up-content form fieldset{
 	border: none;
 }
 .infomation input{
@@ -26,32 +27,27 @@
     border: 1px solid #bbb6ac;
     border-radius: 6px;
 }
-h1{
+.title-center{
 	text-align: center;
 	padding-top: 10px;
 }
-h4{
-	margin-left: 10px;
-}
-button{
+.btn-default{
 	width: 200px;
 	height: 30px;
 	padding-left: 10px;
 	border-radius: 6px;
 }
-#button{
-	background-color: #3399FF;
-}
 .submit{
-
+	margin-top: 13px;
+	padding: 8px 3px 9px 3px;
 }
 	</style>
 </head>
 <body>
-	<div >
+	<form class="container">
 		<div class="sign-up-content">
 			<form name="sign-up">
-				<h1>Đăng ký thành viên</h1>
+				<h1 class="title-center">Đăng ký thành viên</h1>
 				<p>Để đăng ký thành viên, bạn cần khai báo tất cả các ô trống dưới đây</p>
 				<fieldset class="infomation">
 					<input type="text" name="Surname_and_middle_name" placeholder="Họ và tên đệm" size = 70px; >
@@ -60,11 +56,11 @@ button{
 					<input type="text" name="email" placeholder="Email" size = 70px;>
 					<input type="password" name="password1" placeholder="Mật khẩu" size = 70px;>
 					<input type="password" name="password2" placeholder="Lặp lại mật khẩu" size = 70px;>
-				</fieldset>
-				<h4>Giới tính
+				</fieldset><br>
+					<label class="gender">Giới tính</label>
 					<input type="radio" name="sex" value="N/A">N/A
 					<input type="radio" name="sex" value="Nam">Nam
-					<input type="radio" name="sex" value="Nữ">Nữ</h4>
+					<input type="radio" name="sex" value="Nữ">Nữ 
 					<fieldset class="infomation">
 						<input type="date" name="brithday" size = 70px;>
 						<textarea  name="signature"placeholder="Chữ ký" size = 70px;></textarea>
@@ -79,12 +75,12 @@ button{
 				<fieldset >
 					<div class="submit" align="center">
 						<input type="checkbox" name="agree">Tôi đồng ý với 
-						<button>Quy định đăng ký thành viên</button><br><br>
-						<button type="reset">Thiết lập lại</button><button  type="submit" id="button">Đăng ký thành viên</button>
+						<button class="btn btn-default">Quy định đăng ký thành viên</button><br><br>
+						<button class="btn btn-default" type="reset">Thiết lập lại</button><button  type="submit" class="btn btn-info">Đăng ký thành viên</button>
 					</div>
 				</fieldset>
 			</form>
 		</div>
-	</div>
+	</form>
 </body>
 </html>
