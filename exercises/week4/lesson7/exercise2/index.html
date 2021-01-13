@@ -3,6 +3,7 @@
 <html>
 <head>
 	<title>Exercise2</title>
+	 <meta charset="UTF-8">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -15,15 +16,15 @@
 			font-size: 50px;
 			margin-top: 45px;
 		}
-		img{
+		.img-default{
 			margin-left:auto;
 			margin-right: auto;
 			display:block;
 		}
-		.row{
+		.row-default{
 			margin-top: 50px;
 		}
-		.bottom{
+		.objective{
 			margin-top: 90px;
 		}
 	</style>
@@ -31,25 +32,25 @@
 <body>
 	<h1 class="title">What Our Clients Say</h1>
 	<div class="container-fluid">
-		<div  class="row">
+		<div  class="row row-default ">
 			<div class="col-sm-6">
-				<img src="../images/ibm.png" height="100"width="100"; >
+				<img class="img-default" src="../images/ibm.png" height="100"width="100"; >
 				<center><i>Sed vestibulum scelerisque urma, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius uma et pulvuinar venenatis.s</i></center>	
+			</div>
+			<div class="col-sm-6">
+				<img class="img-default" src="../images/windows.jpg" height="100"width="150";>
+				<center><i>Donec euismod dolor ut ultricies consequat.Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.</i></center>
+			</div>
 		</div>
-		<div class="col-sm-6">
-			<img src="../images/windows.jpg" height="100"width="150";>
-			<center><i>Donec euismod dolor ut ultricies consequat.Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.</i></center>
-		</div>
-		</div>
-	</div>
-		<div  class="row bottom">
+		<div  class="row objective">
 			<div class="col-sm-6" >
-				<img src="../images/apple.png" height="150"width="200";>
+				<img class="img-default" src="../images/apple.png" height="150"width="200";>
 				<center><i>In efficitur in velit et tempus.Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula.</i></center>	
-		</div>
-		<div class="col-sm-6">
-			<img src="../images/google.jpg" height="150" width="400">
-			<center><i>Fusce pharetra erat id odio blandit, nec pharetra eros venenatis. Pellentesque porttior cursus massa et vestibulum.</i></center>
+			</div>
+			<div class="col-sm-6">
+				<img class="img-default" src="../images/google.jpg" height="150" width="400">
+				<center><i>Fusce pharetra erat id odio blandit, nec pharetra eros venenatis. Pellentesque porttior cursus massa et vestibulum.</i></center>
+			</div>
 		</div>
 	</div>
 </body>

@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Exercise3</title>
+	<meta charset="UTF-8">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -14,10 +15,10 @@
   		color: #828282;
   		height: 70%;
   	}
-  	.left{
+  	.information-left{
   		margin-left: 10%;
   	}
-  	.right, .left{
+  	.information-right, .information-left{
 		margin-top: 6%;
   	}
   	.button-submit{
@@ -36,14 +37,14 @@
   		background-color:#663399;
   		width: 150px;
   		height: 40px;
-  		margin:25px 60px 25px 145px;
+  		margin:25px 60px 25px 160px;
 		color: #828282;
   	}
   	.copyright{
   		text-align: center;
   		margin-top: 30px;
   	}
-	footer ul{
+	.information{
     list-style: none;
 	}
   </style>
@@ -52,15 +53,15 @@
 <footer>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-sm-4 left">
+			<div class="col-sm-4 information-left">
 				<p>You can opt out of out newsletters at any time. <br>See our privacy policy.</p>
 			<form action="action_page.php">
 				<input class="email" type="text" name="email" placeholder="Enter email here...">
 				<button class="button-submit"><i class="fa fa-location-arrow" aria-hidden="true" ></i></button>
 			</form>
 			</div>	
-			<div class="col-sm-2 right">
-				<ul>
+			<div class="col-sm-2 information-right">
+				<ul class="information">
 					<li>About us</li>
 					<li>About me</li>
 					<li>Our Services</li>
@@ -68,8 +69,8 @@
 					<li>Contact us</li>
 				</ul>
 			</div>	
-			<div class="col-sm-2 right">
-				<ul>
+			<div class="col-sm-2 information-right">
+				<ul class="information">
 					<li>Get in Touch</li>
 					<li>FAQ's</li>
 					<li>Testunanials</li>
@@ -77,15 +78,15 @@
 					<li>Not Found</li>
 				</ul>
 			</div>	
-			<div class="col-sm-2 right">
-				<ul>
+			<div class="col-sm-2 information-right">
+				<ul class="information">
 					<li>Checkout</li>
 					<li>Shopping Cart</li>
 					<li>My Account</li>
 					<li>Login/ Register</li>
 				</ul>
 			</div>	
-			<div class="col-sm-2 right">
+			<div class="col-sm-2 information-right">
 			</div>
 		</div>
 	</div>

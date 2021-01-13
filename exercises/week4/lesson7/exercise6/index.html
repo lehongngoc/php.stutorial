@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Exercise6</title>
+  <meta charset="UTF-8">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -10,67 +11,47 @@
   <style type="text/css">
   	.container{
   		border: 10px solid blue;
-        margin: 100px 500px 120px 500px;
-  		}
+      margin: 100px 500px 100px 500px;
+      font-size: 14px;
+  	}
   	.login-form{
   		margin: 30px 12px 10px 14px;
-  		width: 34.5%;
+  		width: 20.7%;
   	}
-  	.button-fb{
-  		background-color: #0033CC;
-  	}
-  	.button-google{
-  		background-color: #FF0000;
-  	}
-  	.button-phone{
-  		background-color: #00CC00;
-  	}
-	.button-fb, .button-google, .button-phone{
-		height: 40px;
-  		width: 130px;
-		color: white;
-	}
-  	.email, .password{
+  	.bg-email, .bg-password{
   		background-color: #FFFFCC;
   	}
-  	.button-login{
-  		background-color:#1E90FF;
-  	}
-  	.button-log-in, .button-login{
-  		width: 400px;
-  		height: 40px;
-  	}
-	.title{
-	text-align: center;
+	  .title{
+	    text-align: center;
     	border-bottom: 1px solid #c7adad;
     	line-height: 0.1em;
     	margin: 30px 0 11px;
-	}
-	.title span{
+    }
+    .title span{
     background:#fff;
     padding: 3px 2px;
-	}
+    }
   </style>
 </head>
 <body >
 	<form class="login-form">
 	<div class="container">
 		<p class="title"><span>ĐĂNG NHẬP VỚI<span></p>
-		<button class="button-fb"><i class="fab fa-facebook-f"></i>&nbsp;Facebook</button>
-		<button class="button-google"><i class="fab fa-google"></i>&nbsp;Google</button>
-		<button class="button-phone"><i class="fas fa-phone"></i>&nbsp;Phone</button>
+		<button class="bg-primary text-white btn-sm"><i class="fab fa-facebook-f"></i>&nbsp;Facebook</button>
+		<button class="bg-danger text-white btn-sm"><i class="fab fa-google"></i>&nbsp;Google</button>
+		<button class="bg-success text-white btn-sm"><i class="fas fa-phone"></i>&nbsp;Phone</button>
 		<p>HOẶC</p>
 		<p>
 			<label>Email*</label><br>
-			<input class="email" id="fullemail" type="text" name="email" size="51px;"><br>
+			<input class="bg-email" id="fullemail" type="text" name="email" size="35px"><br>
 			<label>Mật khẩu*</label><br>
-			<input class="password" type="password" name="password" size="51px;">
+			<input class="bg-password" type="password" name="password" size="35px">
 			<br>
-			<input type="checkbox" name="checkbox"> Tự động đăng nhập &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+			<input type="checkbox" name="checkbox"> Tự động đăng nhập &nbsp 
 			Quên mật khẩu?<br>
-			<button class="button-login" >Đăng Nhập</button>
-			<p>bạn chưa có tài khoản</p>
-			<button class="button-log-in">Đăng Ký Nhanh</button>
+			<button class="btn btn-primary btn-sm btn-block" >Đăng Nhập</button>
+			<p>Bạn chưa có tài khoản</p>
+			<button class="btn btn-secondary btn-sm btn-block">Đăng Ký Nhanh</button>
 		</p>
 	</div>
 	</form>
