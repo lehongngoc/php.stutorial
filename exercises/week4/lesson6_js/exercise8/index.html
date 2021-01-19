@@ -1,18 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>Exercise8</title>
 </head>
 <body>
     <script>
-        myString= "Robin Singh";
-        patternCut=4;
-        patternString="";
-        for(i=0;i<patternCut;i++){
-            patternString+=myString[i];
-        }
-        document.write(patternString);
+        var a = prompt("Nhập văn bản ");
+        var b = prompt("Nhập vào số ký tự cần tách là: ");
+        var x = a.slice(0,b);
+        alert("ký tự tách được là: " +x)
     </script>
 </body>
 </html>
