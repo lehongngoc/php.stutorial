@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style type="text/css">
+    .btn{
+    background-color: rgb(43, 85, 221);
+    color: white;
+    }
+    small{
+    color: red;
+    display: none;
+    }
+    </style>
+    <script type="text/javascript">
+    function get() {
+    var firstName = document.getElementById("name").value;
+    var lastname = document.getElementById("lastName").value;
+    if(firstName == ""){
+    document.getElementById("name").style.borderColor="red";
+    document.getElementById("error-name").style.display="block";    
+    }else{
+    document.getElementById("name").style.borderColor="";
+    document.getElementById("error-name").style.display="";
+    }
+    if(lastname == ""){
+    document.getElementById("lastName").style.borderColor="red";
+    document.getElementById("error-lastName").style.display="block";
+    return lastname;
+    }else{
+        document.getElementById("lastName").style.borderColor="";
+        document.getElementById("error-lastName").style.display="";
+    }
+}
+    </script>
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+                <label>First Name</label>
+                <input class="col-12" type="text" name="fname" id="name">
+                <small id="error-name" >Trường hợp này bắt buộc phải nhập</small><br>
+                <label>Last Name</label>
+                <input class="col-12" type="text" name="fLastName" id="lastName">
+                <small id="error-lastName" >Trường hợp này bắt buộc phải nhập</small><br>
+                <input type="radio" name="gender" id="male">
+                <label> Male</label>
+                <input type="radio" name="gender" id="female">
+                <label>Female</label>
+                <input class="col-12" type="date">
+                <input class="btn mt-3" type="button" onclick="get()" value="Submit">
+        </form>
+    </div>
+    
+    
+</body>
+</html>
