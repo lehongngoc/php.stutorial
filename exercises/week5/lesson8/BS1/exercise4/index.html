@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise 4</title>
+  <link rel="shortcut icon" href="image/logoCofee.png" type="image/x-icon">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">       
+    <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container">
+                <a class="navbar-brand nav-item-active active text-white d-inline-block" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav nav-change">
+                        <li class="nav-item active">
+                            <a class="nav-link text-light" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light d-inline-block" href="#">Features</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light d-inline-block" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown link</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="form-inline ml-auto">
+                        <input class="form-control mr-sm-2" type="email" placeholder="Email" aria-label="Email" required>
+                        <input class="form-control mr-sm-2" type="password" placeholder="Password" aria-label="Password" required>
+                        <button class="btn btn-success my-2 my-sm-0" type="submit">Sign in</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid bg-secondary">
+            <div class="container p-3">
+                <h1>Hello, world!</h1>
+                <p>Lorem ipsum dolor sit amet, consectetu adipicing elit. Itaque deleniti quod ratione perspiciatis molestias minus id, velit, onsectetur voluptatibus et obcaecati hic magnam alias, cumque autem. Hic quis ipsum harum.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                  Learn more
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Sample modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nihil repellendus cumque fugiat optio qui facilis ipsam! Eius nostrum sed aliquam, quisunde error molestiae magman, doloremque aut aliquid accusantium!
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-3">
+            <div class="container">
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 p-3">
+                        <h3>Heading</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga voluptatibus eos illum sunt voluptatum doloremque repellendus ut at laborum architecto explicabo facere ad. Quisquam!</p>
+                        <p><i class="far fa-thumbs-up"></i> <a data-toggle="modal" data-target="#exampleModalForm">View details</a></p>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action=".">
+                                            <label>Guest name</label><br>
+                                            <input type="text" name=""><br>
+                                            <label for="exampleFormControlTextarea1">Feedback</label><br>
+                                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">send</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 p-3">
+                        <h3>Heading</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga voluptatibus eos illum sunt voluptatum doloremque repellendus ut at laborum architecto explicabo facere ad. Quisquam!</p>
+                        <p><i class="fas fa-mobile-alt"></i> View details</p>
+                    </div>
+                    <div class="col-sm-4 p-3">
+                        <h3>Heading<span class="badge badge-primary">New</span></h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga voluptatibus eos illum sunt voluptatum doloremque repellendus ut at laborum architecto explicabo facere ad. Quisquam!</p>
+                        <p><i class="fas fa-map-marker-alt"></i> View details</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</body>
+</html>
