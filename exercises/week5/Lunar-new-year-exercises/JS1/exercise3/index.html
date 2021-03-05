@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise3</title>
+</head>
+<body>
+ 	<h1>Tìm max-min</h1>
+ 	<p>Nhập số thứ nhất</p>
+  	<input type="text" class="number" name="firstNumber" id="a" required />
+   	<p>Nhập vào hệ số nhứ hai:</p>
+    <input type="text" class="number" name="secondNumber" id="b" required />
+    <p>Nhập vào hệ số nhứ ba:</p>
+    <input type="text" class="number" name="thirtNumber" id="c" required /><br>
+ 	<input type="button" value="Hiển thị max-min" onclick="check()">
+	<p id="result"></p>
+	<p id="find"></p>
+	<script type="text/javascript">
+ 	function check(){
+ 		var a = document.getElementById("a").value;
+        var b = document.getElementById("b").value;
+        var c = document.getElementById("c").value;
+        if(isNaN(a)||(isNaN(b))||(isNaN(c))) {
+        document.getElementById("find").innerHTML ="Invalid value!";  
+        }
+        var max=a;
+        if(b>max){
+        document.getElementById("find").innerHTML ="Số lớn nhất là" +b; 
+        }
+
+ 	}
+ </script>
+</body>
+</html>
