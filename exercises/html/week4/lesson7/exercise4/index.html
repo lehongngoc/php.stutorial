@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise4</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<style type="text/css">
+.container{
+		height:700px;
+		width: 900px;
+		background-color:#f7f2f2;
+		margin: auto auto;
+}
+.sign-up-content form fieldset{
+	border: none;
+}
+.infomation input{
+    padding: 5px;
+    width: 99%;
+    margin: 3px 0;
+    border: 1px solid #bbb6ac;
+    border-radius: 6px;
+}
+.infomation textarea{
+    padding: 5px;
+    width: 99%;
+    margin: 3px 0;
+    border: 1px solid #bbb6ac;
+    border-radius: 6px;
+}
+.title{
+	padding-top: 10px;
+}
+.button-default{
+	width: 200px;
+	height: 30px;
+	padding-left: 10px;
+	border-radius: 6px;
+}
+.submit{
+	margin-top: 13px;
+	padding: 8px 3px 9px 3px;
+}
+	</style>
+</head>
+<body>
+	<form class="container">
+		<div class="sign-up-content">
+			<form name="sign-up">
+				<h1 class="title text-center">Đăng ký thành viên</h1>
+				<p>Để đăng ký thành viên, bạn cần khai báo tất cả các ô trống dưới đây</p>
+				<fieldset class="infomation">
+					<input type="text" name="Surname_and_middle_name" placeholder="Họ và tên đệm" size = 70px; >
+					<input type="text" name="name" placeholder="Tên" size = 70px;>
+					<input type="text" name="user_name" placeholder="Tên đăng nhập" size = 70px;>
+					<input type="text" name="email" placeholder="Email" size = 70px;>
+					<input type="password" name="password" placeholder="Mật khẩu" size = 70px;>
+					<input type="password" name="repassword" placeholder="Lặp lại mật khẩu" size = 70px;>
+				</fieldset><br>
+					<label class="gender">Giới tính</label>
+					<input type="radio" name="sex" value="N/A">N/A
+					<input type="radio" name="sex" value="Nam">Nam
+					<input type="radio" name="sex" value="Nữ">Nữ 
+					<fieldset class="infomation">
+						<input type="date" name="brithday" size = 70px;>
+						<textarea  name="signature"placeholder="Chữ ký" size = 70px;></textarea>
+						<input list="private-question" name="privite-question" placeholder="Câu hỏi bảo mật"size = 70px;>
+                    	<datalist id="private-question">
+                        	<option value="Bạn sinh ở đâu?"></option>
+                        	<option value="Sở thích của bạn là gì?"></option>
+                        	<option value="Bạn học trường nào?"></option>
+                     </datalist><br><br>
+					<input type="text" name="answer" placeholder="Trả lời câu hỏi">
+					</fieldset>
+				<fieldset >
+					<div align="center">
+						<input type="checkbox" name="agree">Tôi đồng ý với 
+						<button class="button-default">Quy định đăng ký thành viên</button><br><br>
+						<button class="button-default submit" type="reset">Thiết lập lại</button><button type="submit" class="btn btn-info btn-sm submit">Đăng ký thành viên</button>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</form>
+</body>
+</html>

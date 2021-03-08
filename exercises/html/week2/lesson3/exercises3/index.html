@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercises3</title>
+</head>
+<body>
+	<form action="/action_gape.php" method="Get">
+	<fieldset>
+	<legend>Personal Details</legend>
+		<label for="fullname">Name:</label>
+		<input id="fullname" name="name" type="text" placeholder=" Enter your name " size="50" >  </input><br>
+		<label for="address">Address:</label>
+		<input id="address" name="address" type="text" placeholder=" Enter address here " size="50">  </input><br>
+		<label for="fullemail">Email:</label>
+		<input id="fullemail" name="email" type="text" placeholder=" Enter email here" size="50" > </input><br>
+		<label for="phone">Phone Number:</label>
+		<input id="phone" name="phone" type="number" placeholder=" Enter 10  diglt number" size="50" > </input><br>
+		<label for="iq">IQ:</label>
+		<input id="iq" name="iq" type="number" placeholder=" Enter IQ here" size="50" > </input><br>
+		<label for="gender">Gender</label><br>
+		<input type="radio" id="male" name="gernder" value="male">
+		<label for="male">Male</label><br>
+		<input type="radio" id="female" name="gernder" value="female">
+		<label for="female">Female</label><br>
+		<input type="radio" id="other" name="gernder" value="other">
+		<label for="other">Other</label><br><br>
+		<label for="date">Date of Proposed Outing:</label>
+		<input id="date" name="date" type="date" size="50">  </input>
+	</fieldset>
+	<fieldset>
+	<p> Check All That Apply</p>
+		<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+		<label for="vehicle1"> I have tattoos and/or  piercings</label><br>
+		<input type="checkbox" id="vehicle2" name="vehicle2">
+		<label for="vehicle2">I am more than 2 years older than my daughter</label><br>
+		<input type="checkbox" id="vehicle3" name="vehicle3" >
+		<label for="vehicle3">I own a panel van or V8 ute</label><br>
+		<input type="checkbox" id="vehicle3" name="vehicle3" >
+		<label for="vehicle3">I work full-time</label><br>
+		<input type="checkbox" id="vehicle4" name="vehicle4" >
+		<label for="vehicle3">My parents are tick</label><br>
+		<input type="checkbox" id="vehicle5" name="vehicle5" >
+		<label for="vehicle3">Is the date at a well lit public latation</label><br>
+	</fieldset>
+	<fieldset>
+		<label for="political">Political Persuasion:</label>
+			<select>
+				<option>Left Wing</option>
+				<option>Right Wing </option>
+				<option>Conservative</option>
+			</select>
+		<label for="political">Education Level Completed:</label>
+			<select>
+				<option>University</option>
+				<option>College </option>
+				<option>High School</option>
+				<option>None</option>
+			</select>			
+	</fieldset>
+	</form>
+	<form action="/action_gape.php" method="Get">
+	<fieldset>
+	<legend>Essay Section</legend>
+	<p>In 50 word or more explain why you want to date my daughter</p>
+		<input type="textarea" placeholder ="Enter Text Here">
+	<p>Please upload contact detail for 2 references</p>
+		<input type="textarea" placeholder ="Enter Text Here">
+	<p>Upload Police Clearnce Certificate, Bank Statement and Medical Certifiates here:<input type="file" value="Choose"></p>
+	</fieldset>
+	<button>Send your application</button>
+	</form>
+</body>
+</html>

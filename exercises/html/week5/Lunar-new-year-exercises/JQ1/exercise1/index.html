@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 1</title>
+    <link rel="shortcut icon" href="image/logoCofee.png" type="image/x-icon">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">       
+    <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 m-auto">
+                <form action="#">
+                    <h2 class="borde bg-light">Chu vi và diện tích hình chữ nhật</h2>
+                    <div class="invalid-feedback">
+                        <h3>Nhập số</h3>
+                    </div>
+                    <label for="Length">Nhập đơn vị chiều dài</label>
+                    <input class="form-control is-valid" type="text" name="length" id="length" pattern="[0-9]{0,10}" title="cần nhập số" required>
+                    <label for="Width">Nhập đơn vị chiều rộng</label>
+                    <input class="form-control is-valid" type="text" name="width" id="width" pattern="[0-9]{0,10}" title="cần nhập số" required>
+                    <button class="btn btn-success mt-2" id="calculate" type="button">Tính chu vi và diện tích</button>
+                    <div class="mt-4" id="in"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+<script>
+$(document).ready(function () {
+    $(".container").append("<p></p>");
+    $("#calculate").click(function () {
+        var lengthValue=$("#length").val();
+        var widthValue=$("#width").val();
+        if(lengthValue==''||widthValue==''){
+            $("#in").text("bạn cần nhập dữ liệu đầy đủ").css("color","red");
+        }else{
+            $("#in").html("<p>Chu vi là: "+(parseFloat(lengthValue)+parseFloat(widthValue))*2+"m <br> Diện tích là: "+(parseFloat(lengthValue)*parseFloat(widthValue))+"m<sup>2</sup></p>").css("color","black");
+        }
+    });
+});
+</script>
+</body>
+</html>

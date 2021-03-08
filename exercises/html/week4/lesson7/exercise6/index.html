@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise6</title>
+  <meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  	.container{
+  		border: 10px solid blue;
+      margin: 100px 500px 100px 500px;
+      font-size: 14px;
+  	}
+  	.login-form{
+  		margin: 30px 12px 10px 14px;
+  		width: 20.7%;
+  	}
+  	.bg-email, .bg-password{
+  		background-color: #FFFFCC;
+  	}
+	  .title{
+	    text-align: center;
+    	border-bottom: 1px solid #c7adad;
+    	line-height: 0.1em;
+    	margin: 30px 0 11px;
+    }
+    .title span{
+    background:#fff;
+    padding: 3px 2px;
+    }
+  </style>
+</head>
+<body >
+	<form class="login-form" action="action.php" method="post">
+	<div class="container">
+		<p class="title"><span>ĐĂNG NHẬP VỚI<span></p>
+		<button class="bg-primary text-white btn-sm"><i class="fab fa-facebook-f"></i>&nbsp;Facebook</button>
+		<button class="bg-danger text-white btn-sm"><i class="fab fa-google"></i>&nbsp;Google</button>
+		<button class="bg-success text-white btn-sm"><i class="fas fa-phone"></i>&nbsp;Phone</button>
+		<p>HOẶC</p>
+		<p>
+			<label>Email*</label><br>
+			<input class="bg-email" id="fullemail" type="text" name="email" size="35px"><br>
+			<label>Mật khẩu*</label><br>
+			<input class="bg-password" type="password" name="password" size="35px">
+			<br>
+			<input type="checkbox" name="checkbox"> Tự động đăng nhập &nbsp 
+			Quên mật khẩu?<br>
+			<button class="btn btn-primary btn-sm btn-block" >Đăng Nhập</button>
+			<p>Bạn chưa có tài khoản</p>
+			<button class="btn btn-secondary btn-sm btn-block">Đăng Ký Nhanh</button>
+		</p>
+	</div>
+	</form>
+</body>
+</html>

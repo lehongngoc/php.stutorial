@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise4</title>
+</head>
+<body>
+	<h1>Tính giai thừa</h1>
+	<p>Nhập vào hệ số giai thừa</p>
+	<input type="number" name="Nhập" id="Socantinh" required><br><br>
+	<input type="button" value="Tính giai thừa" onclick="Tính()">
+	<p id="result"></p>
+	<script type="text/javascript">
+		function Tính(){
+			var Socantinh = document.getElementById("Socantinh").value;
+			var tich=1;
+			var day="1";
+			if(Socantinh >1) {
+				for(i=2;i<= Socantinh; i++) {
+					tich=tich*i;
+					day += "x" + i;
+				}
+			}
+			 document.getElementById("result").innerHTML = Socantinh +"!="+ day + "="+ tich;
+		}	
+	</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise5</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  	<style type="text/css">
+  		.container-fluid{
+  			color: blue;
+  			border:10px solid #3399FF;
+  			margin:20px 5px 10px 5px;
+  		}
+  		.img_left{
+  			width: 100%;
+  			height: 100%;
+  			padding:15px 15px 15px 15px;
+  		}
+  		.btn-green{
+  			margin-top: 20px;
+  		}
+  		.btn-default{
+			color: black;
+  		}
+		.btn-default, .btn-green{
+			width: 50%%px;
+  			height: 25%px;
+			margin-left: 7px;
+		}
+  		.content{
+  			margin:0px 15px 15px 5px;
+  		}
+  		#hr span{
+    	background:#fff;
+    	padding:0px 10px;
+		}
+		#hr{
+    	text-align: center;
+    	border-bottom: 1px solid #000;
+    	line-height: 0.1em;
+    	margin: 35px 10px 35px 0.5px;
+		}
+		.login-form{
+		margin:15px 15px 45px -17px;
+	}
+  	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-7">
+				<img src="./images/cv.jpg " class="img_left" >	
+			</div>
+			<div class="col-sm-5" >
+				<form class="login-form" name="register" action="action.php" method="post">
+					<label>Họ tên*</label><br>
+					<input type="text" name="name" size="75px" class="content"><br>
+					<label>Email*</label><br>
+					<input id="fullemail" type="text" name="email" size="75px" class="content"><br>
+					<label>Mật khẩu*</label><br>
+					<input type="password" name="password" size="75px" class="content"><br>
+					<label>Mã xác thực*</label>
+					<img src="./images/maxacthuc.jpg" width="130" height="70">
+					<input type="text" name="verification_codes" size="75" class="content">
+					<button class="btn btn-success btn-block text-white btn-green">ĐĂNG KÝ MỞ TÀI KHOẢN &nbsp;<i class="fas fa-angle-right"></i></button>
+					<p id="hr"><span>Bạn đã có tài khoản ?</span></p>
+					<button class="btn btn-default btn-block">ĐĂNG NHẬP</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
