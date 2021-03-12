@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>exercise4</title>
-</head>
-<body>
 <?php
 	$Mã_sản_phẩm="EV2009";
 	$Tên_sảm_phẩm="Tấm hợp kim nhôm ngoài trời EV2009";
@@ -17,5 +11,3 @@
 	echo ("Thông tin sản phẩm trước khi trừ thuế VAT=".($Số_lượng*$Đơn_giá)."<br/>");
 	echo ("Thông tin sản phẩm sau khi trừ thuế VAT=".(($Số_lượng*$Đơn_giá)*$VAT)."<br/>");
 ?>
-</body>
-</html>
