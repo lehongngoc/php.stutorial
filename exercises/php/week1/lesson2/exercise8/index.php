@@ -7,7 +7,7 @@
 <body>
 <table>
     <?php
-       function snt(int $nummber){
+       function so_nguyen_to(int $nummber){
         if($nummber <2){
             return false;
         }
@@ -24,9 +24,9 @@
         echo '<tr class="row">';
         for ($j = 1; $j < 10; $j++) {
             if(snt($number)){
-                echo '<td class="col bg-success">'.$number.'</div>';
+                echo '<td class="col bg-success">'.$number.'</td>';
                 }else{
-                    echo '<td class=" col">'.$number.'</div>';
+                    echo '<td class=" col">'.$number.'</td>';
                 }
                 $number++;
             }
