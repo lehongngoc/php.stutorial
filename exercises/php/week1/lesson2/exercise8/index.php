@@ -23,7 +23,7 @@
     for ($i = 1; $i < 10; $i++) {
         echo '<tr class="row">';
         for ($j = 1; $j < 10; $j++) {
-            if(snt($number)){
+            if(so_nguyen_to($number)){
                 echo '<td class="col bg-success">'.$number.'</td>';
                 }else{
                     echo '<td class=" col">'.$number.'</td>';
