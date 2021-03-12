@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>exercise6</title>
-</head>
-<body>
-	<?php
+<?php
 	$day=5;
-
 	switch ($day) {
 		case 0:
 			echo "Thứ 2";
@@ -33,6 +26,4 @@
 			echo "Không có ngày nào";
 			break;
 	}
-	?>
-</body>
-</html>
+?>
