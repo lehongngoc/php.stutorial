@@ -11,8 +11,8 @@
         if($nummber <2){
             return false;
         }
-        $sq = sqrt($nummber);
-        for($i = 2; $i <= $sq ; $i++){
+        $sqrt = sqrt($nummber);
+        for($i = 2; $i <= $sqrt ; $i++){
             if ($nummber  %  $i == 0){
                 return false;
             }
