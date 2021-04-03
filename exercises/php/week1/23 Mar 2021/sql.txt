@@ -1,0 +1,124 @@
+CREATE TABLE NhanVien(
+  HONV varchar(20),
+    TENLOT varchar(20),
+    TENNV varchar(20),
+    PHAI char(20),
+    LUONG int ,
+    MANV int,
+    NGSINH datetime,
+    DIACHI varchar(20),
+    PHG int
+    
+);
+CREATE TABLE NhanVien(
+  HONV varchar(20),
+    TENLOT varchar(20),
+    TENNV varchar(20),
+    PHAI char(20),
+    LUONG int ,
+    MANV int,
+    NGSINH datetime,
+    DIACHI varchar(20),
+    PHG int
+    
+);
+CREATE TABLE  PHONGBAN(
+   TENPHG varchar(20),
+    PHG int
+    
+);
+CREATE TABLE  PHANCONG(
+   MANV  int,
+   MADA int,
+    SOGIO float
+    
+);
+ INSERT INTO `nhanvien`(`HONV`, `TENLOT`, `TENNV`, `PHAI`, `LUONG`, `MANV`, `NGSINH`, `DIACHI`, `PHG`) 
+VALUES('Đinh','Lê','Tiên','Nam',4000,123456789,'Nguyễn Trãi ,Q5',1)
+INSERT INTO `nhanvien`(`HONV`, `TENLOT`, `TENNV`, `PHAI`, `LUONG`, `MANV`, `NGSINH`, `DIACHI`, `PHG`) 
+VALUES ('Nguyễn','Thị','Loan','Nữ',2500,333445555,'1955/08/12','NGuyễn Huệ, Q1',5)
+INSERT INTO `nhanvien`(`HONV`, `TENLOT`, `TENNV`, `PHAI`, `LUONG`, `MANV`, `NGSINH`, `DIACHI`, `PHG`) 
+VALUES('Nguyễn','LAN','ANH','Nữ',4300,66884444,'1962/09/15','Lê Lợi, Q1',5)
+INSERT INTO `nhanvien`(`HONV`, `TENLOT`, `TENNV`, `PHAI`, `LUONG`, `MANV`, `NGSINH`, `DIACHI`, `PHG`) 
+VALUES('Trần ','Thanh','Tâm','Nam',3800,453453453,'1972/07/131','Trần Não, Q2',5)
+INSERT INTO `dean`(`TENDA`, `MADA`, `DDIEM_DA`, `PHG`) VALUES ('Sản Phẩm X',1,'Quy Nhơn',5)
+INSERT INTO `dean`(`TENDA`, `MADA`, `DDIEM_DA`, `PHG`) VALUES ('Sản Phẩm Y',2,'Nha Trang',5)
+INSERT INTO `dean`(`TENDA`, `MADA`, `DDIEM_DA`, `PHG`) VALUES ('Sản Phẩm Z',3,'TP HCM',5)
+INSERT INTO `dean`(`TENDA`, `MADA`, `DDIEM_DA`, `PHG`) VALUES ('Tin Hoạc Hóa',10,'Bình Dương',4)
+INSERT INTO `phongban`(`TENPHG`, `PHG`) VALUES (1,'Nhân Sự')
+INSERT INTO `phongban`(`TENPHG`, `PHG`) VALUES (2,'Kế hoạch')
+INSERT INTO `phongban`(`TENPHG`, `PHG`) VALUES (3,'Kinh Doanh')
+INSERT INTO `phongban`(`TENPHG`, `PHG`) VALUES (4,'Marketing')
+INSERT INTO `phongban`(`TENPHG`, `PHG`) VALUES (5,'Kế Toán')
+INSERT INTO `phancong`(`MANV`, `MADA`, `SOGIO`) VALUES (123456789,1,'32.0')
+INSERT INTO `phancong`(`MANV`, `MADA`, `SOGIO`) VALUES (123456789,2,'8.0')
+INSERT INTO `phancong`(`MANV`, `MADA`, `SOGIO`) VALUES (66884444,3,'40.0')
+INSERT INTO `phancong`(`MANV`, `MADA`, `SOGIO`) VALUES (354354354,1,'20.0')
+SELECT * FROM `dean` 
+SELECT * FROM `nhanvien`
+SELECT * FROM `phancong` 
+SELECT * FROM `phongban` 
+SELECT * FROM `nhanvien`
+SELECT * FROM `nhanvien` WHERE PHG = 5
+SELECT `HONV`, `TENLOT`, `TENNV`,`MANV` FROM `nhanvien` WHERE PHG = 5 and LUONG >= 3000
+SELECT `TENNV`,`MANV` FROM `nhanvien` WHERE LUONG >=2000 and LUONG <= 8000
+SELECT * FROM `nhanvien` WHERE DIACHI Like '%Nguyễn%'
+SELECT COUNT(PHAI) "COUNT(NhanVien)"
+FROM nhanvien
+SELECT * FROM `phongban`
+--------------------------------------------------------
+RECORD COMPANY
+ALTER TABLE `bands` CHANGE `name` `Band Name` VARCHAR(255)
+CREATE TABLE SONGS (
+    ID INT PRIMARY KEY ,
+    NAME CHAR(100) NOT NULL ,
+    LENGTH FLOAT NOT NULL ,
+    album_id INT 
+);
+SELECT id,name,MIN(release_year),band_id FROM albums
+
+INSERT INTO `bands`( `Band Name`) VALUES ('Seventaaa Wonder')
+UPDATE `albums` SET `release_year`= 1986 WHERE   release_year IS NULL
+DELETE FROM `bands` WHERE `bands`.`id` = 8
+DELETE FROM `albums` WHERE `albums`.`id` = 18
+SELECT AVG(LENGTH) AS "So bai trung binh"
+FROM songs
+WHERE LENGTH >= 0;
+------------------------------------
+EX2
+CREATE TABLE manufacturers (
+    code  INT PRIMARY KEY ,
+ 	name  text );
+CREATE table products (
+    code INT PRIMARY KEY ,
+    name TEXT ,
+    price REAL ,
+    manufacturer INT
+) ;
+SELECT code , name , price , manufacturer FROM products ;
+SELECT* FROM products WHERE price <200 ;
+SELECT* FROM products WHERE price <200 and price >60 ;
+SELECT AVG(price)
+FROM products
+WHERE price >= 0;
+SELECT AVG(price)
+FROM products
+WHERE manufacturer=2;
+INSERT INTO Products(Code, Name, Price, Manufacturer) VALUES(11, 'Loudspeaker', 70, 2);
+SELECT code,name,manufacturer, MIN(price)FROM products 
+------------------------------
+CREATE table movies (
+    code int PRIMARY key ,
+    rating text 
+)
+CREATE TABLE MovieTheaters (
+    code int PRIMARY key ,
+    name text ,
+    movie int 
+	)
+SELECT title FROM movies
+SELECT DISTINCT rating
+FROM movies
+ORDER BY rating
+SELECT * FROM movies WHERE rating IS NULL;
+SELECT * FROM movietheaters WHERE movie IS NULL;
