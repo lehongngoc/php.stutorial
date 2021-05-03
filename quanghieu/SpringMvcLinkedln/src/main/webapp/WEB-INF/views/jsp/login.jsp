@@ -9,8 +9,9 @@
   
   
   <a href="https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=81xomg6on7p1gw
-  &redirect_uri=http://localhost:8080/SpringMvcLinkedIn/login-linkedin&scope=r_basicprofile">Login With LinkedIn</a>  
-  <form name='loginForm' action="<c:url value='j_spring_security_login' />" method='POST'>
+  &redirect_uri=http://localhost:8080/SpringMvcLinkedIn/login-linkedin&scope=r_basicprofile">Login With LinkedIn</a>
+  <c:url value="/authen" var="loginUrl"/>    
+  <form name='loginForm' action="${loginUrl}" method='POST'>
     <table>
       <tr>
         <td>User:</td>

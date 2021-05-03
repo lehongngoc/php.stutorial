@@ -20,6 +20,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class LinkedInUtils {
   @Autowired
   private Environment env;
+  
   public String getToken(final String code) throws ClientProtocolException, IOException {
     String link = env.getProperty("linkedin.link.get.token");
     String response = Request.Post(link)
@@ -32,6 +33,7 @@ public class LinkedInUtils {
     JsonNode node = mapper.readTree(response).get("access_token");
     return node.textValue();
   }
+  
   public LinkedInUser getUserInfo(final String accessToken) throws ClientProtocolException, IOException {
     String link = env.getProperty("linkedin.link.get.user_info") + accessToken;
     String response = Request.Get(link).execute().returnContent().asString();
